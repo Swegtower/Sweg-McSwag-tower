@@ -1,0 +1,466 @@
+//Generated with http://www.mvmwaves.com by @rickstain
+
+#base robot_giant.pop
+#base robot_standard.pop
+
+WaveSchedule
+{
+	StartingCurrency 400
+	RespawnWaveTime 10
+	FixedRespawnWaveTime no
+	CanBotsAttackWhileInSpawnRoom yes
+	AddSentryBusterWhenDamageDealtExceeds 3000
+	AddSentryBusterWhenKillCountExceeds 15
+	Advanced	0
+	
+	Wave //WAVE 1
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		WaitWhenDone 65
+		Checkpoint Yes
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 50
+			MaxActive 50
+			SpawnCount 25
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Sniper_Huntsman
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Scout_Sandman
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Heavyweapons_Fist
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Heavyweapons_Heavyweight_Champ
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 60
+			MaxActive 60
+			SpawnCount 20
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Demoman_Knight
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Soldier_Buff_Banner
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 400
+			MaxActive 400
+			SpawnCount 50
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Heavyweapons_Gnome
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Pyro_Flaregun
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Scout
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Soldier
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Pyro
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Demoman
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Heavyweapons
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Medic
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 5
+			MaxActive 5
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Heavyweapons_Deflector
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_DemoMan_PrinceTavish
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Scout_Baseball
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Soldier_Crit
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Pyro_Flare_Spammer
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Pyro_Pusher
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 15
+			MaxActive 15
+			SpawnCount 5
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Boxing_Heavy
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 100
+			MaxActive 100
+			SpawnCount 25
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 400
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Soldier_Spammer
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 50
+			MaxActive 50
+			SpawnCount 10
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 2
+			TotalCurrency 400
+			Support 1
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Scout_Fast
+			}
+		}
+	}
+	Wave //WAVE 2
+	{
+		StartWaveOutput
+		{
+			Target wave_start_relay
+			Action Trigger
+		}
+		DoneOutput
+		{
+			Target wave_finished_relay
+			Action trigger
+		}
+		WaitWhenDone 65
+		Checkpoint Yes
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 500
+			MaxActive 500
+			SpawnCount 50
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 10000
+			Support 1
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Demoman
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 500
+			MaxActive 500
+			SpawnCount 50
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 10000
+			Support 1
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Soldier_Crit
+			}
+		}
+			
+		WaveSpawn
+		{
+			Where spawnbot
+			TotalCount 500
+			MaxActive 500
+			SpawnCount 50
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 5
+			TotalCurrency 10000
+			Support 1
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Soldier_Spammer
+			}
+		}
+	}
+}
